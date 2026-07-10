@@ -59,21 +59,55 @@ Versão JSON (para agentes) + Markdown legível.
 
 ---
 
-## 4. Estruturas de Saída
+## 4. Estruturas de Saída (Exemplo Completo)
 
-### Bible (Markdown)
+### 4.1 Bible de Personagens e Estilo Visual
+
 ```markdown
 ## BIBLE DE PERSONAGENS E ESTILO VISUAL
-**Título:** ...
-**Personagens:** ...
-**Estilo Visual:** ...
+
+**Título do Projeto:** Meu Trailer Incrível
+**Duração Total:** 45 segundos
+**Formato:** 9:16
+
+### PERSONAGENS
+**Ana (protagonista)**
+- Idade aparente: 28 anos
+- Cabelo: preto longo liso com franja
+- Roupa principal: jaqueta de couro preta + camiseta branca
+- Acessório assinatura: colar de prata com pingente de lua
+
+### ESTILO VISUAL
+- Paleta: tons quentes + contraste forte
+- Iluminação: natural + luzes dramáticas
 ```
 
-### JSON de Roteiro
+### 4.2 JSON Completo de Saída (pronto para PenShot / ArcReel)
+
 ```json
 {
-  "projeto": "...",
-  "planos": [ ... ]
+  "projeto": "Meu Trailer Incrível",
+  "duracao_total_segundos": 45,
+  "formato": "9:16",
+  "estilo_visual": "Tons quentes com contraste forte...",
+  "personagens": {
+    "Ana": {
+      "descricao_fisica": "28 anos, cabelo preto longo liso com franja, jaqueta de couro preta...",
+      "acessorio": "colar de prata com pingente de lua"
+    }
+  },
+  "planos": [
+    {
+      "numero": 1,
+      "duracao_segundos": 6,
+      "tipo_plano": "Close-up",
+      "acao": "Ana olha para a câmera com determinação",
+      "dialogo": "Eu não vou desistir.",
+      "prompt_visual": "Close-up of a 28 year old woman with long straight black hair and bangs, wearing black leather jacket and white t-shirt, silver moon pendant necklace, determined expression, warm lighting with strong contrast, cinematic...",
+      "camera": "Slow push-in",
+      "continuidade": "Personagem exatamente como descrito na Bible"
+    }
+  ]
 }
 ```
 
